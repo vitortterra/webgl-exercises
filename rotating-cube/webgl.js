@@ -189,7 +189,7 @@ function render() {
 }
 
 // ========================================================
-// Model of a cube with side length 1
+// Model of a cube with side length 1 centered at the origin
 // ========================================================
 
 const CUBE_CORNERS = [
