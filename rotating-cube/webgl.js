@@ -102,7 +102,7 @@ function createInterface() {
   document.getElementById("pButton").onclick = function () {
     gCube.isRotating = !gCube.isRotating;
   };
-  document.getElementById("alfaSlider").onchange = function (e) {
+  document.getElementById("alphaSlider").onchange = function (e) {
     gCtx.alpha = e.target.value;
     gl.uniform1f(gShader.uAlphaSpec, gCtx.alpha);
   };
