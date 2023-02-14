@@ -8,5 +8,5 @@ Coursework was mostly based on [this course](https://www.cs.umd.edu/~mount/427/)
 
 * [Rotating cube](/rotating-cube): a cube that can rotate around X, Y or Z axis and a Phong point light source.
 
-* [Shadow](/shadow): a moving square and its shadow.
+* [Shadow](/shadow): a square and its moving shadow.
 
