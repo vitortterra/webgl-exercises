@@ -47,14 +47,26 @@ function main() {
   gl.clearColor(0.0, 1.0, 1.0, 1.0);
   gl.enable(gl.DEPTH_TEST);
 
+  createInterface();
   createShaders()
 
   render();
 };
 
-/* ==================================================================
-    Configuração dos shaders
-*/
+function createInterface() {
+  document.getElementById("yLightPos").onchange = function (e) {
+    LIGHT.pos[1] = e.target.value;
+    gShader.shadowMatrix = getShadowMatrix();
+  };
+}
+
+function getShadowMatrix() {
+  var m = mat4();
+  m[3][1] = -1 / LIGHT.pos[1];
+  m[3][3] = 0;
+
+  return m;
+}
 
 function createShaders() {
   var program = makeProgram(gl, gVertexShaderSrc, gFragmentShaderSrc);
@@ -77,11 +89,7 @@ function createShaders() {
   gShader.uModelView = gl.getUniformLocation(program, "uModelView");
 
   // shadow projection matrix
-  var m = mat4();
-  m[3][1] = -1 / LIGHT.pos[1];
-  m[3][3] = 0;
-
-  gShader.shadowMatrix = m;
+  gShader.shadowMatrix = getShadowMatrix();
 };
 
 function render() {
