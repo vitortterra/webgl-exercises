@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Earth</title>
+	<script src="utils/webglUtils.js"></script>
+	<script src="utils/MVnew.js"></script>
+	<script src="webgl.js"></script>
+</head>
+
+<body>
+	<canvas id="glcanvas" width="400" height="400">
+		Oops, it's possible that your browser does not support HTML5 canvas.
+	</canvas>
+	<p></p>
+
+	<button id= "xButton">Rotate X</button>
+	<button id= "yButton">Rotate Y</button>
+	<button id= "zButton">Rotate Z</button>
+	<button id = "pButton">Pause/Run</button>
+
+	<div>
+		<input id="numDivSlider" class="styled" type="range" value="6" min="0" max="8" step="1" name="numDivSlider"></input>
+		<label for="numDivSlider">Number of divisions (sphere definition)</label>
+	</div>
+
+</body>
+
+</html>
