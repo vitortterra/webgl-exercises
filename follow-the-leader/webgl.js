@@ -20,12 +20,12 @@ const OBST_COLOR = [0.6, 0, 0, 1]
 const TRIG_SX = 30;
 const TRIG_SY = 10;
 const LEADER_ACCEL = 300;
-const LEADER_VMAX = 800;
+const LEADER_VMAX = 300;
 const LEADER_VMIN = 100;
 const LEADER_ANGULAR_SPEED = 360;
 
 // boid kinematics
-const BOID_VMAX = 400;
+const BOID_VMAX = 200;
 const BOID_VMIN = 100;
 
 // interaction forces radius and weights
