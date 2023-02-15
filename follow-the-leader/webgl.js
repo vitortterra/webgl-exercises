@@ -121,7 +121,7 @@ function onKeyDownCallback(event) {
         break;
       case "=":
       case "+":
-        adicionaBoid();
+        addBoid();
         break;
       case "-":
       case "_":
