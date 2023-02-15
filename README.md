@@ -11,3 +11,6 @@ Coursework was mostly based on [this course](https://www.cs.umd.edu/~mount/427/)
 * [Shadow](/shadow): a square and its moving shadow.
 
 * [Earth](/earth): a world satellite picture wrapped around a rotating sphere, so that it looks like our planet.
+
+* [Follow the leader](/follow-the-leader): an arbitrary number of "boids" follow a keyboard-controlled
+leader and automatically avoid obstacles ([reference](https://www.red3d.com/cwr/boids/)).
