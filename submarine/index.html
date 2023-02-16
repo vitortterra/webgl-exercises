@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Submarine</title>
+	<link rel="stylesheet" href="./styles.css" type="text/css">
+    <script src="utils/webglUtils.js"></script>
+    <script src="utils/MVnew.js"></script>
+	<script src="config.js"></script>
+	<script src="models.js"></script>
+	<script src="compoundModels.js"></script>
+	<script src="webgl.js"></script>
+
+</head>
+
+<body>
+    <h2 id="loading">Loading...</h2>
+	<div id="container">
+        <canvas id="glcanvas" width="900" height="700">
+            Oops, it's possible that your browser does not support HTML5 canvas.
+        </canvas>
+        <div>
+            <h3> Keyboard controls: </h3>
+            <h4> Translation:</h4>
+            <p> J: move forward </p>
+            <p> L: move backwards </p>
+            <p> K: stop translation </p>
+
+            <h4> Rotation:</h4>
+            <p> W: pitch up </p>
+            <p> X: pitch down </p>
+            <p> D: yaw to the right </p>
+            <p> A: yaw to the left </p>
+            <p> C: roll clockwise </p>
+            <p> Z: roll counter-clockwise </p>
+            <p> S: stop rotation </p>
+
+            <h4> Change view:</h4>
+            <p> M: change POV to next submarine </p>
+            <p> N: change POV to previous submarine </p>                   
+        </div>
+   </div>
+   <p></p>
+   <input id="button-playpause" class="styled" type="button" value="Play"></input>
+   <input id="button-step" class="styled" type="button" value="Step"></input>
+</body>
+
+</html>
