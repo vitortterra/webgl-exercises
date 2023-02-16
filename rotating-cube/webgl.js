@@ -312,8 +312,9 @@ function square(pos, nor, vert, a, b, c, d) {
  
      // specular component
      float ks = pow( max(0.0, dot(normalV, halfV)), uAlphaSpec);
-     vec4 specular = vec4(1, 0, 0, 1); // non-iluminated part
-     if (kd > 0.0) {  // parte iluminada
+     vec4 specular = vec4(1, 0, 0, 1); // non-illuminated part
+
+     if (kd > 0.0) {  // parte illuminated part
          specular = ks * uSpecularColor;
      }
 
