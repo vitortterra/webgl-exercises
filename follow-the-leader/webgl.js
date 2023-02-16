@@ -355,7 +355,7 @@ void main() {
  /**
 * Model of a triangle (leader or boid)
 */
-function Triangle(x, y, vx, vy, sx, sy, cor) {
+function Triangle(x, y, vx, vy, sx, sy, color) {
   this.vertices = [
     vec2(0.5, 0.0),
     vec2(-0.5, 0.5),
@@ -366,7 +366,7 @@ function Triangle(x, y, vx, vy, sx, sy, cor) {
   this.vel = vec2(vx, vy);
   this.sx = sx;
   this.sy = sy;
-  this.cor = cor;
+  this.color = color;
 
   this.theta = Math.atan2(vy, vx) * 180 / Math.PI;
   this.id = gTrigId++;
@@ -402,7 +402,7 @@ function generateTrigColors() {
   for (let trig of gTrigs) {
     for (let _ of trig.vertices)
     {
-      colors.push(trig.cor);
+      colors.push(trig.color);
     }
   }
 
@@ -576,11 +576,11 @@ function checkCollisionWithObstacles(){
 * Class that defines a circle (obstacle) to be drawn
 * Adapted from the coursework material
 */
-function Circle(x, y, r, sx, sy, cor) {
+function Circle(x, y, r, sx, sy, color) {
   this.vertices = approximateCircle(CIRCLE_RESOLUTION);
   this.nv = this.vertices.length;
   this.pos = vec2(x, y);
-  this.color = cor;
+  this.color = color;
   this.radius = r;
   this.sx = sx;
   this.sy = sy;
