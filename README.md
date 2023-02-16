@@ -14,3 +14,6 @@ Coursework was mostly based on [this course](https://www.cs.umd.edu/~mount/427/)
 
 * [Follow the leader](/follow-the-leader): an arbitrary number of "boids" follow a keyboard-controlled
 leader and automatically avoid obstacles ([reference](https://www.red3d.com/cwr/boids/)).
+
+* [Submarine](/submarine): a model of the bottom of the ocean with several submarines. You can switch
+to the point of view to each one of them.
